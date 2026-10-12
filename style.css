@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #e9d5ff);
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.carte {
+    width: 100%;
+    max-width: 550px;
+    background: white;
+    padding: 40px 28px;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(30, 41, 59, 0.12);
+}
+
+.icone {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #4f46e5;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 20px;
+    margin: 10px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+.compteur {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f1f5f9;
+    border-radius: 16px;
+}
+
+.compteur h2 {
+    font-size: 21px;
+}
+
+#compteur {
+    font-weight: bold;
+    color: #4f46e5;
+    font-size: 22px;
+}
+
+#message {
+    color: #4f46e5;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+footer {
+    margin-top: 22px;
+    color: #475569;
+    font-size: 13px;
+}
+
+/* Mode sombre */
+
+body.dark {
+    background: linear-gradient(135deg, #0f172a, #312e81);
+    color: #f8fafc;
+}
+
+body.dark .carte {
+    background: #1e293b;
+}
+
+body.dark h1,
+body.dark #compteur,
+body.dark #message {
+    color: #a5b4fc;
+}
+
+body.dark .description,
+body.dark footer {
+    color: #cbd5e1;
+}
+
+body.dark .compteur {
+    background: #334155;
+}
